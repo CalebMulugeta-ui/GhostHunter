@@ -1,0 +1,24 @@
+Purpose: Creates and runs threads representing a ghost and 4 hunters, which then perform various actions until the hunters all flee, or they determine the ghost's type. The program then prints relevant text based on how the threads ran, and frees all dynamically allocated data.
+
+List of files:
+    defs.h — Central header containing all enums, structs, constants, and shared typedefs.
+    evidence.c — Utility functions for setting and checking evidence bits.
+    room.c — Creates rooms, manages occupants, evidence, and room-level synchronization.
+    roomstack.c — Stack implementation for tracking hunter movement history.
+    house.c — Builds the house layout, connects rooms, and initializes major structures.
+    ghost.c — Contains the ghost thread logic: movement, evidence dropping, boredom handling.
+    main.c — Entry point: initializes everything, spawns threads, waits for completion.
+    Makefile — Compiles all C files into the final executable; includes clean and build rules.
+
+
+
+Compliling and Executing:
+Navigate to the folder containing the source code in a terminal.
+Use the command 'make' to compile and link all necessary files.
+Use the command './finalProject' while in the folder containing the executable to run the program.
+
+Usage instructions:
+    Follow the on-screen prompts once the program has started running by entering names for the specified hunters.
+
+SOURCES:
+    Discussed topic that confused me with Nicholas Gelderez. 
