@@ -4,16 +4,16 @@ A multithreaded ghost hunting simulation written in C, inspired by Phasmophobia.
 
 ## 🎮 Overview
 
-This project simulates a team of paranormal investigators exploring Willow House, searching for evidence to identify a ghost. Each hunter carries a detection device and must collect three unique pieces of evidence before fear or boredom drives them away. Meanwhile, the ghost roams freely, leaving evidence and haunting the hunters.
+This project simulates a team of paranormal investigators exploring haunted House, searching for evidence to identify a ghost. Each hunter carries a detection device and must collect three unique pieces of evidence before fear or boredom drives them away. Meanwhile, the ghost roams freely, leaving evidence and haunting the hunters.
 
 ## ✨ Features
 
 - **Multithreaded Simulation**: Hunters and ghost run concurrently using POSIX threads
-- **Thread-Safe Operations**: Semaphores prevent race conditions and deadlocks
+- **Thread Safe Operations**: Semaphores prevent race conditions and deadlocks
 - **Dynamic Memory Management**: Growing hunter array and linked-list pathfinding
 - **Bitwise Evidence System**: Efficient evidence storage using bit flags
 - **Deadlock Prevention**: Consistent lock ordering prevents thread deadlocks
-- **Real-time Logging**: CSV logs track every action for validation
+- **Real time Logging**: CSV logs track every action for validation
 
 ## 🚀 Getting Started
 
@@ -63,16 +63,3 @@ make clean
 - **Hunters Win**: Collect 3 unique evidence types matching a ghost type
 - **Hunters Lose**: All hunters exit due to fear or boredom
 - **Ghost Wins**: Hunters fail to identify ghost before leaving
-
-
-## 🎓 Learning Outcomes
-
-This project demonstrates:
-
-- **Concurrent Programming**: POSIX threads and synchronization
-- **Memory Management**: Dynamic allocation, linked lists, cleanup
-- **Bitwise Operations**: Efficient flag storage and manipulation
-- **Deadlock Prevention**: Lock ordering strategies
-- **Data Structures**: Stacks, arrays, graphs (room connections)
-- **Modular Design**: Separation of concerns across files
-
